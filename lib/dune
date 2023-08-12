@@ -1,0 +1,2 @@
+(library
+ (name thot_stack))

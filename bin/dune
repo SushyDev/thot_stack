@@ -1,0 +1,5 @@
+(executable
+ (public_name thot_stack)
+ (name main)
+ (libraries thot_stack dream tyxml)
+)
