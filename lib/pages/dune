@@ -1,4 +1,3 @@
 (library
  (name pages)
- (libraries tyxml)
-)
+ (libraries tyxml))

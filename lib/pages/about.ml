@@ -1,6 +1,6 @@
 open Tyxml.Html
 
-let heading_title = "caml my ocaml deez!"
+let heading_title = "about my caml"
 
 let img_jay_diesel = 
   let src = "/static/jay_diesel.jpg" in

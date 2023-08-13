@@ -12,7 +12,7 @@ let () = Dream.run
     Dream.get "/" (fun _ ->
       Dream.html
       @@ doc_to_string
-      @@ Layouts.Main.render
-      @@ Pages.Home.render
+      @@ Layouts.Primary.render
+      @@ Pages.About.render
     );
   ]
