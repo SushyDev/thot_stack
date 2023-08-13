@@ -1,7 +1,7 @@
 # thot_stack
 
 - (T)ailwindcss
-- (H)thmx
+- (H)tmx
 - (O)caml
 - (T)yxml
 
