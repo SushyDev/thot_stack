@@ -8,7 +8,7 @@ let doc_to_string (page) =
 let () = Dream.run 
   ~port
   @@ Dream.router [
-    Dream.get "/static/**" @@ Dream.static "./static";
+    Dream.get "/dist/**" @@ Dream.static "./_build/dist";
     Dream.get "/" (fun _ ->
       Dream.html
       @@ doc_to_string

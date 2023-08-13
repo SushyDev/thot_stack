@@ -3,7 +3,7 @@ open Tyxml.Html
 let heading_title = "caml my ocaml deez!"
 
 let img_jay_diesel = 
-  let src = "/static/jay_diesel.jpg" in
+  let src = "/dist/jay_diesel.jpg" in
   let alt = "jay diesel" in
   let width = 420 in
 
