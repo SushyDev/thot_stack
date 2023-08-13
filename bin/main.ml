@@ -54,6 +54,11 @@ let () = Dream.run
     Dream.get "/static/**" @@ Dream.static "./static";
     Dream.get "/echo/:word" (fun request -> Dream.html (Dream.param request "word"));
     Dream.get "/count" (fun _ -> Dream.html (string_of_int !count));
-    Dream.get "/template" (fun _ -> Dream.html @@ elt_to_string @@ Layouts.Main.render ());
+    Dream.get "/template" (fun _ ->
+      Dream.html
+      @@ elt_to_string
+      @@ Layouts.Main.render
+      @@ Pages.Home.render ()
+    );
   ]
 
