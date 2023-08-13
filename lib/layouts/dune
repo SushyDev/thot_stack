@@ -1,0 +1,4 @@
+(library
+ (name layouts)
+ (libraries tyxml)
+)
