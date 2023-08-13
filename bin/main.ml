@@ -13,6 +13,6 @@ let () = Dream.run
       Dream.html
       @@ doc_to_string
       @@ Layouts.Primary.render
-      @@ Pages.About.render
+      @@ Pages.Home.render
     );
   ]

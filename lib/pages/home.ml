@@ -12,7 +12,7 @@ let img_jay_diesel =
 (* Not sure if this should be a function or a variable *)
 let render = [
   main [
-    h1 [ txt heading_title ];
+    h1 ~a:[a_class ["text-red-500"; "text-xl"]] [ txt heading_title ];
     img_jay_diesel;
   ]
 ]
