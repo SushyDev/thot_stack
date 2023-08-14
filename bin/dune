@@ -2,4 +2,4 @@
  (name main)
  (public_name thot_stack)
  (package thot_stack)
- (libraries layouts pages dream tyxml))
+ (libraries layouts pages dream tyxml lwt))
