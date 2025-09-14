@@ -1,9 +1,9 @@
 opam-version: "2.0"
 
 depends: [
-  "ocaml" {>= "4.08" & < "5.3"}
-   "dune" {= "3.5.0"}
-   "dream" {= "1.0.0~alpha8"}
+  "ocaml" {= "5.3.0"}
+   "dune" {= "3.20.2"}
+  "dream" {= "1.0.0~alpha8"}
   "tyxml" {>= "4.6.0"}
   "lwt" {>= "5.9.2"}
   "fmt" {>= "0.11.0"}
@@ -14,8 +14,8 @@ synopsis: "A short synopsis"
 description: "A longer description"
 maintainer: ["Sushy"]
 authors: ["Sushy"]
-license: "LICENSE"
-tags: [""]
+license: "MIT"
+tags: ["none"]
 homepage: "https://github.com/username/reponame"
 doc: "https://url/to/documentation"
 bug-reports: "https://github.com/username/reponame/issues"

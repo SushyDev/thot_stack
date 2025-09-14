@@ -40,25 +40,18 @@
 							echo "Node.js version: $(node --version)"
 							echo "Yarn version: $(yarn --version)"
 
-							# Initialize opam if not already done
 							if [ ! -d ~/.opam ]; then
-								echo "Initializing opam..."
 								opam init --yes --no-setup
 							fi
 
-							# Create local opam switch if not exists
 							if [ ! -d _opam ]; then
-								echo "Creating local opam switch..."
 								opam switch create . --yes
 								eval $(opam env)
 							fi
 
 							# Install dependencies
-							echo "Installing opam dependencies..."
 							opam install . --deps-only --yes
 							eval $(opam env)
-
-							echo "Opam setup complete!"
 						'';
 					};
 				}

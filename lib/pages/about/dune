@@ -1,0 +1,3 @@
+(library
+ (name about)
+ (libraries tyxml dream lwt lib))

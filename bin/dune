@@ -1,7 +1,8 @@
 (executable
  (name main)
  (public_name main)
- (libraries layouts pages dream tyxml lwt))
+ (modules main)
+ (libraries layouts pages home about project todo dream tyxml lwt lib))
 
 ; (executable (name runapp)
 ;   (libraries supervisor)

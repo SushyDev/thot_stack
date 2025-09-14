@@ -1,4 +1,4 @@
-(lang dune 3.10)
+(lang dune 3.5)
 
 (name thot_stack)
 (version 1.0)
@@ -12,7 +12,7 @@
   (tyxml (>= "4.6.0"))
   (lwt (>= "5.9.2"))
   (fmt (>= "0.11.0"))
-   (ocaml (>= "4.08" & < "5.3"))
-   (dune (= "3.5.0"))
+   (ocaml (= "5.3"))
+   (dune (= "3.20.2"))
  )
 )
