@@ -1,25 +1,54 @@
 # thot_stack
 
-- (T)ailwindcss
-- (H)tmx
-- (O)caml
-- (T)yxml
+A modern web framework stack combining **T**ailwind CSS, **H**TMX, **O**Caml, and **T**yxml for building interactive web applications.
 
-(We leave out the rest for the purpose of funny)
+## Stack
 
-rest: dream, postcss, vite
+- **OCaml**: Functional programming language for the backend
+- **Dream**: Web framework for OCaml
+- **Tyxml**: Type-safe HTML generation
+- **HTMX**: For dynamic, interactive UIs without JavaScript
+- **Tailwind CSS**: Utility-first CSS framework
+- **Vite**: Fast build tool and dev server
+
+## Prerequisites
+
+- OCaml 5.3
+- Node.js and Yarn
+- Dune build system
+
+## Installation
+
+1. Install dependencies:
+
+```bash
+opam install . --deps-only
+npm run ci
+```
 
 ## Build
+
 ```bash
-yarn --frozen-lockfile
-yarn build
+npm run build
 dune build
-dune exec thot_stack
 ```
 
 ## Develop
+
+Run the development server:
+
 ```bash
-yarn --frozen-lockfile
-yarn watch
-dune exec -w thot_stack
+npm run serve
 ```
+
+This will start the server with hot reloading enabled.
+
+## Usage
+
+After building, run the application:
+
+```bash
+dune exec thot_stack
+```
+
+The server will start on the default port (usually 8080).

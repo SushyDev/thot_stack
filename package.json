@@ -1,18 +1,18 @@
 {
-  "name": "thot-stack",
-  "type": "module",
-  "scripts": {
-    "build": "vite build",
-    "watch": "vite build --watch",
-    "serve": "dune/_build/default/bin/dune exec -w main"
-  },
-  "devDependencies": {
-    "@tailwindcss/vite": "^4.1.13",
-    "glob": "^11.0.3",
-    "tailwindcss": "^4.1.13"
-  },
-  "dependencies": {
-    "htmx.org": "^2.0.7",
-    "vite": "npm:rolldown-vite@latest"
-  }
+	"name": "thot-stack",
+	"type": "module",
+	"scripts": {
+		"build": "vite build && dune build",
+		"watch": "vite build --watch",
+		"serve": "dune/_build/default/bin/dune exec -w main"
+	},
+	"devDependencies": {
+		"@tailwindcss/vite": "^4.1.13",
+		"glob": "^11.0.3",
+		"tailwindcss": "^4.1.13"
+	},
+	"dependencies": {
+		"htmx.org": "^2.0.7",
+		"vite": "npm:rolldown-vite@latest"
+	}
 }
