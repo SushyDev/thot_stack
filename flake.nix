@@ -17,7 +17,6 @@
 						buildInputs = with pkgs; [
 							# OCaml toolchain
 							ocaml
-							dune_3
 							opam
 
 							# Node.js toolchain

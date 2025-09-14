@@ -20,15 +20,16 @@ let lwt_elt_to_string elt =
 let () = Dream.run 
   ~port
   @@ Dream.logger
+  @@ Dream.livereload
   @@ Dream.router [
     Dream.get "/dist/**" @@ Dream.static "./_build/dist";
     Dream.get "/" (fun _ ->
-      Dream.html
+       Dream.html
       @@ doc_to_string
       @@ Layouts.Primary.render
       @@ Pages.Home.render
     );
-    Dream.get "/about" (fun _ ->
+    Dream.get "/abouta" (fun _ ->
       Dream.html
       @@ doc_to_string
       @@ Layouts.Primary.render

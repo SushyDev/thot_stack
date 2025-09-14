@@ -1,2 +1,2 @@
-import '@/css/index.css';
 import 'htmx.org';
+import '../css/index.css';

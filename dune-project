@@ -1,15 +1,18 @@
 (lang dune 3.10)
 
+(name thot_stack)
+(version 1.0)
+
 (package
  (name thot_stack)
  (synopsis "THOT Stack: Tailwind, HTMX, OCaml, Tyxml")
  (description "A web framework using OCaml with Dream, Tyxml, HTMX, and Tailwind")
  (depends
-  dream
-  tyxml
-  lwt
-  fmt
-  ocaml
-  dune
+  (dream (= "1.0.0~alpha7"))
+  (tyxml (>= "4.6.0"))
+  (lwt (>= "5.9.2"))
+  (fmt (>= "0.11.0"))
+  (ocaml (>= "5.3.0"))
+   (dune (= "3.5.0"))
  )
 )
