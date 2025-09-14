@@ -1,5 +1,15 @@
 (executable
  (name main)
- (public_name thot_stack)
- (package thot_stack)
+ (public_name main)
  (libraries layouts pages dream tyxml lwt))
+
+; (executable (name runapp)
+;   (libraries supervisor)
+;   (modules Runapp)
+;   (flags (:standard -g))
+;   (preprocess (pps ppx_deriving.std)))
+
+(rule
+  (alias watch)
+  (deps main.exe)
+  (action (run ./main.exe args)))

@@ -1,11 +1,11 @@
 open Tyxml.Html
 
-let heading_title = "todo camlsa"
+let heading_title = "todo caml"
 
 (* Not sure if this should be a function or a variable *)
 let render = [
   main [
-    h1 ~a:[a_class ["text-green-500"; "text-xl"]] [ txt "Todo List" ];
+    h1 ~a:[a_class ["text-green-500"; "text-xl"]] [ txt "Todo List 10" ];
     form ~a:[
       Unsafe.string_attrib "hx-put" "/api/todo-add";
       Unsafe.string_attrib "hx-target" "#todo-list";
