@@ -1,2 +1,23 @@
 _build
 node_modules
+
+# OCaml
+*.cm*
+*.o
+*.a
+
+# Direnv
+.direnv/
+
+# OPAM
+_opam/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Build outputs
+dist/
+build/
