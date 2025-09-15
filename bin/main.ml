@@ -23,7 +23,7 @@ let response_page page request = Dream.html
 
 let () = Dream.run ~port
 	@@ Dream.logger
-	@@ Dream.livereload
+	(* @@ Dream.livereload *)
 	@@ Dream.router [
 		Dream.get "/dist/**" @@ Dream.static "./_build/dist";
 

@@ -2,17 +2,17 @@
 	"name": "thot-stack",
 	"type": "module",
 	"scripts": {
-		"build": "vite build && dune build",
+		"build": "vite build",
 		"watch": "vite build --watch",
 		"serve": "dune/_build/default/bin/dune exec -w main"
 	},
 	"devDependencies": {
 		"@tailwindcss/vite": "^4.1.13",
 		"glob": "^11.0.3",
-		"tailwindcss": "^4.1.13"
+		"tailwindcss": "^4.1.13",
+		"vite": "npm:rolldown-vite@latest"
 	},
 	"dependencies": {
-		"htmx.org": "^2.0.7",
-		"vite": "npm:rolldown-vite@latest"
+		"htmx.org": "^2.0.7"
 	}
 }

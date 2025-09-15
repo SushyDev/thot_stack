@@ -50,7 +50,7 @@ let page = {
 
 				content [
 					inset_rounding_elt;
-					secondary_button ("#", "Get Started")
+					(* secondary_button ("#", "Get Started") *)
 				];
 			]
 		];

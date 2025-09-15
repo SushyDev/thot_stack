@@ -20,4 +20,4 @@ _opam/
 
 # Build outputs
 dist/
-build/
+result

@@ -57,5 +57,31 @@
 				}
 			);
 		in
-		{ inherit devShells; };
+		let
+			supportedSystems = nixpkgs.lib.platforms.all;
+			packages =
+				nixpkgs.lib.genAttrs supportedSystems (system:
+					let
+						pkgs = import nixpkgs { inherit system; };
+						ocamlPackages = pkgs.ocaml-ng.ocamlPackages_5_3;
+					in
+					{
+						build = ocamlPackages.buildDunePackage {
+							pname = "thot_stack";
+							version = "0.1.0";
+							src = ./.;
+
+							buildInputs = with ocamlPackages; [
+								dream
+								tyxml
+								lwt
+								fmt
+							];
+						};
+					}
+				);
+		in
+		{
+			inherit devShells packages;
+		};
 }

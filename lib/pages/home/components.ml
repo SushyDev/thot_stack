@@ -17,7 +17,9 @@ let header elts = div ~a:[
 		"h-fit";
 		"md:h-[780px]";
 		"px-4";
-		"py-10";
+		"pt-8";
+		"pb-10";
+		"md:py-10";
 		"flex";
 		"flex-col";
 		"overflow-hidden"
@@ -34,7 +36,7 @@ let header_flex elts = div ~a:[
 		"md:flex-row";
 		"min-h-px";
 		"h-full";
-		"pt-4"
+		"md:pt-4"
 	]; 
 	a_style "view-transition-name: page-top"
 ] elts
@@ -152,7 +154,7 @@ let main_card (title, description) =
 let blog_card (project, description) =
 	let card_classes = [
 		"bg-white";
-		"w-[50%]";
+		"w-[clamp(350px,50vw,65%)]";
 		"md:w-full";
 		"h-fit";
 		"flex-none";
@@ -175,12 +177,12 @@ let blog_card (project, description) =
 	]
 
 let blog_card_container (blog_cards) =
-	div ~a:[a_class ["md:w-[40%]"; "h-full"; "ml-auto"]; a_style "view-transition-name: projects"] [
-		div ~a:[a_class ["h-full"; "rounded-xl"; "place-self-center"; "flex"; "md:flex-col"; "align-center"; "ml-auto"; "overflow-x-auto"; "md:overflow-x-none"; "md:overflow-y-auto"; "gap-4"]] blog_cards
+	div ~a:[a_class ["md:w-[40%]"; "h-full"; "w-full"; "ml-auto"]; a_style "view-transition-name: projects"] [
+		div ~a:[a_class ["h-full"; "w-full"; "rounded-xl"; "place-self-center"; "flex"; "md:flex-col"; "align-center"; "ml-auto"; "overflow-x-auto"; "md:overflow-x-none"; "md:overflow-y-auto"; "gap-4"]] blog_cards
 	]
 
 let content elts =
 	div ~a:[a_class ["relative"; "h-screen"; "bg-gray-100"]; a_style "view-transition-name: content"] elts
 
 let inset_rounding_elt =
-	div ~a:[a_class ["absolute"; "inset-0"; "bg-inherit"; "h-6"; "w-full"; "rounded-t-3xl"; "-mt-6"]] []
+	div ~a:[a_class ["absolute"; "inset-0"; "bg-inherit"; "h-7"; "w-full"; "rounded-t-3xl"; "-mt-6"]] []
